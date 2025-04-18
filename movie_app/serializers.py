@@ -129,7 +129,7 @@ class RatingSerializers(serializers.ModelSerializer):
     user = ProfileSimpleSerializers()
     class Meta:
         model = Rating
-        fields = ['id', 'user', 'text', 'parent', 'stars', 'created_date']
+        fields = ['id', 'user', 'text', 'stars', 'created_date']
 
 
 class HistorySerializers(serializers.ModelSerializer):
